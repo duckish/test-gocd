@@ -25,8 +25,8 @@ pipelines:
     materials:
       mygit: # this is the name of material
         # keyword git says about type of material and url at once
-        git: http://my.example.org/mygit.git
-        branch: ci
+        git: https://github.com/duckish/test-gocd
+        branch: master
       upstream:
         # type is optional here, material type is implied based on presence of pipeline and stage fields
         # type: dependency
