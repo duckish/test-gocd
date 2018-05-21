@@ -17,7 +17,7 @@ pipelines:
             build: # name of the job
               tasks:
                - exec: # indicates type of task
-                   command: touch /tmp/test.txt
+                   command: ansible-playbook /home/ansible/local_action.yaml -i /home/ansible/inventory
   "yaml-example": # definition of yaml-example pipeline
     group: yaml-example
     label_template: "${mygit[:8]}"
